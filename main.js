@@ -79,51 +79,51 @@
 
 
 
-let apples;
-let money;
+// let apples;
+// let money;
 
-const start = () => {
-  apples = 0;
-  money = 2;
-  askForAction(); //invoking function
-};
+// const start = () => {
+//   apples = 0;
+//   money = 2;
+//   askForAction(); //invoking function
+// };
 
-const showStatus = () => {
-  alert('You have ' + apples + ' apples and $' + money);
-};
+// const showStatus = () => {
+//   alert('You have ' + apples + ' apples and $' + money);
+// };
 
-const askForAction = () => {
-  showStatus();
-  const choice = prompt('What do you want to do?', 'buy apple / eat apple / restart');
+// const askForAction = () => {
+//   showStatus();
+//   const choice = prompt('What do you want to do?', 'buy apple / eat apple / restart');
 
-  if (choice === 'buy apple') {
-    buyApple();
-  }else if (choice === 'eat apple'){
-    eatApple()
-  }else if (choice === 'restart'){
-    start();
-  };
-};
+//   if (choice === 'buy apple') {
+//     buyApple();
+//   }else if (choice === 'eat apple'){
+//     eatApple()
+//   }else if (choice === 'restart'){
+//     start();
+//   };
+// };
 
-const buyApple = () => {
-  if (money === 0) {
-    alert('You don\'t have enough money!')
-    askForAction()
-  } else {
-  apples++;
-  money --;
-  askForAction();
-  };
-};
+// const buyApple = () => {
+//   if (money === 0) {
+//     alert('You don\'t have enough money!')
+//     askForAction()
+//   } else {
+//   apples++;
+//   money --;
+//   askForAction();
+//   };
+// };
 
-const eatApple = () => {
-  if (apples === 0) {
-    alert('You have no apples to eat')
-    askForAction()
-  } else {
-    apples--;
-    askForAction();
-  };
-};
+// const eatApple = () => {
+//   if (apples === 0) {
+//     alert('You have no apples to eat')
+//     askForAction()
+//   } else {
+//     apples--;
+//     askForAction();
+//   };
+// };
 
-start();
+// start();
