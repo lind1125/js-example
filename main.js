@@ -128,32 +128,55 @@
 
 // start();
 
-let myDiv = document.getElementById('hello');
+// let myDiv = document.getElementById('hello');
 
-// console.log(myDiv)
+// // console.log(myDiv)
 
-let theSquares = document.getElementsByClassName('square')
+// let theSquares = document.getElementsByClassName('square')
 
-// console.log(theSquares[0])
-// console.log(theSquares[1])
+// // console.log(theSquares[0])
+// // console.log(theSquares[1])
 
-let theDivs = document.getElementsByTagName('div') // too broad most of the time
+// let theDivs = document.getElementsByTagName('div') // too broad most of the time
 
-// console.log(theDivs[0]) 
-// console.log(theDivs[1]) 
+// // console.log(theDivs[0]) 
+// // console.log(theDivs[1]) 
 
-let myDiv2 = document.querySelector('#gb')
+// let myDiv2 = document.querySelector('#gb')
 
-// console.log(myDiv2)
+// // console.log(myDiv2)
 
-let mySquares2 = document.querySelectorAll('.square')
-console.log(mySquares2[0])
+// let mySquares2 = document.querySelectorAll('.square')
+// console.log(mySquares2[0])
 
-// use the selector to change styles
-myDiv.style.backgroundColor = 'green'
-myDiv2.style.height = '300px'
+// // use the selector to change styles
+// myDiv.style.backgroundColor = 'green'
+// myDiv2.style.height = '300px'
 
-// Changing content
+// // Changing content
 
-myDiv.innerText = 'BUTTS, BABY!'
-myDiv2.innerHTML = '<h2>THIS IS AWESOME!</h2>'
+// myDiv.innerText = 'BUTTS, BABY!'
+// myDiv2.innerHTML = '<h2>THIS IS AWESOME!</h2>'
+
+// let myH2 = document.getElementsByTagName('h2')
+
+// console.log(myH2[0])
+
+// creating an element
+let a = document.createElement('a');
+a.href = 'http://hackertyper.com'
+a.textContent = 'Hack the planet!'
+
+// adds link to the bottom of the page
+document.body.appendChild(a)
+
+let list = document.getElementById("my-favorite-movies")
+
+// creeate
+let newMovie = document.createElement('li')
+
+//modify
+newMovie.textContent = 'Pirates of Silicon Valley'
+
+// attach
+list.appendChild(newMovie)
