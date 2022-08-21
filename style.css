@@ -1,4 +1,12 @@
-body {
-  background-color: green;
+#hello {
+  background-color: yellow;
 }
 
+#gb {
+  background-color: orange;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+}
