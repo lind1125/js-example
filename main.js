@@ -173,10 +173,28 @@ document.body.appendChild(a)
 let list = document.getElementById("my-favorite-movies")
 
 // creeate
-let newMovie = document.createElement('li')
+// let newMovie = document.createElement('li')
 
 //modify
-newMovie.textContent = 'Pirates of Silicon Valley'
+// newMovie.textContent = 'Pirates of Silicon Valley'
 
 // attach
-list.appendChild(newMovie)
+// list.appendChild(newMovie)
+
+// syntax to add beginning or in the middle of an existing element
+
+// let insertedNode = parentNode.insertBefore(newNode, referenceNode)
+
+
+let newMovie = document.createElement('li');
+newMovie.innerText = 'Dr. Strangelove';
+
+// get reference to the second element inside the list
+let second = list.children[1];
+console.log(second)
+
+list.insertBefore(newMovie, second)
+
+// remove an element
+list.removeChild(second);
+// second here is referring to the original value, even though technically it is no longer the second elementin the list
