@@ -127,3 +127,33 @@
 // };
 
 // start();
+
+let myDiv = document.getElementById('hello');
+
+// console.log(myDiv)
+
+let theSquares = document.getElementsByClassName('square')
+
+// console.log(theSquares[0])
+// console.log(theSquares[1])
+
+let theDivs = document.getElementsByTagName('div') // too broad most of the time
+
+// console.log(theDivs[0]) 
+// console.log(theDivs[1]) 
+
+let myDiv2 = document.querySelector('#gb')
+
+// console.log(myDiv2)
+
+let mySquares2 = document.querySelectorAll('.square')
+console.log(mySquares2[0])
+
+// use the selector to change styles
+myDiv.style.backgroundColor = 'green'
+myDiv2.style.height = '300px'
+
+// Changing content
+
+myDiv.innerText = 'BUTTS, BABY!'
+myDiv2.innerHTML = '<h2>THIS IS AWESOME!</h2>'
